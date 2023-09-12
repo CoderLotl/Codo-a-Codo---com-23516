@@ -80,6 +80,18 @@ header
     background-color: rgb(182, 142, 11);
 }
 
+#inicio
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#acerca-de
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 #content
 {
     background-image: linear-gradient(to right, #053964, rgb(150, 26, 138));

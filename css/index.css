@@ -9,15 +9,16 @@
 {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     text-align: center;
     flex-basis: 100%;
     border-style: solid;
     border-width: 1px;
-    transition: 300ms;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -ms-transition: 300ms;
-    -o-transition: 300ms;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
 }
 
 #consolas span:hover
