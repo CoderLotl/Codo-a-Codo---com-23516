@@ -20,10 +20,13 @@ async function LoadPSGames()
         content = await response.text();
         console.log(content);
 
-        const article = document.createElement("article");
-        article.textContent = content;
-        article.setAttribute('class', 'game-article');
-        games.appendChild(article);
+        for(let i = 0; i < 3; i++)
+        {
+            const article = document.createElement("article");
+            article.textContent = content;
+            article.setAttribute('class', 'game-article');
+            games.appendChild(article);
+        }
     }
     catch
     {
