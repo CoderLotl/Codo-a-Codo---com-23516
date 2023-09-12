@@ -35,3 +35,40 @@
 {
     background-image: url('../images/ps-icon.jpg');
 }
+
+#games
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.game-article
+{
+    text-align: center;
+    background-color: rgb(13, 124, 91);
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 250ms;
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -ms-transition: 250ms;
+    -o-transition: 250ms;
+}
+
+.game-article:hover
+{
+    background-color: rgb(68, 175, 143);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    width: 150px;
+    height: 120px;
+}
