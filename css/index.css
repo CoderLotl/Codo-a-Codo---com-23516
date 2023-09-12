@@ -1,0 +1,36 @@
+#consolas
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+
+#consolas span
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 100%;
+    border-style: solid;
+    border-width: 1px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+#consolas span:hover
+{
+    color: beige;
+    height: 80px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+#consola1-span:hover
+{
+    background-image: url('../ps-icon.jpg');
+}
