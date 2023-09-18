@@ -19,6 +19,7 @@
     -moz-transition: 400ms;
     -ms-transition: 400ms;
     -o-transition: 400ms;
+   
 }
 
 #consolas span:hover
@@ -29,13 +30,22 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
+    transition: 1s;
+    
 }
 
 #consola1-span:hover
 {
+    
     background-image: url('../images/ps-icon.jpg');
 }
+#consola2-span:hover{
+    background-image: url('../images/xbox-icon.jpg');
 
+}
+#consola3-span:hover{
+    background-image: url('../images/ns-icon.jpg');
+}
 #games
 {
     margin-top: 20px;

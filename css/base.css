@@ -77,19 +77,30 @@ header
 
 #main-nav a:hover
 {
-    background-color: rgb(182, 142, 11);
+    background-image: linear-gradient(120deg,
+    #9500ff,
+    rgb(0, 183, 255),
+    #24e279
+    );
 }
 
-#inicio
+#inicio 
 {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    letter-spacing: 3px;
 }
 
 #acerca-de
 {
-    border-top-right-radius: 10px;
+    border-top-right-radius: 9px;
     border-bottom-right-radius: 10px;
+    letter-spacing: .3px;
+    
+}
+#contacto{
+    letter-spacing: 2px;
+
 }
 
 #content
