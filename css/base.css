@@ -1,6 +1,6 @@
 body
 {
-    background-color: rgb(68, 68, 68);    
+    background-color: rgb(240, 240, 240);    
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,7 @@ body
 {        
     height: 100vh;
     width: 90%;
+    max-width: 1024px;
     position: relative;    
     background-color: gray;
     border-style: solid;
@@ -68,11 +69,11 @@ header
     flex-basis: 100%;
     align-items: center;
     justify-content: center;
-    transition: 300ms;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -ms-transition: 300ms;
-    -o-transition: 300ms;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
 }
 
 #main-nav a:hover
@@ -104,7 +105,8 @@ footer
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgb(194, 194, 194);    
+    color: rgb(180, 180, 180);
+    background-color: rgb(0, 0, 0);    
     text-align: center;
 }
 

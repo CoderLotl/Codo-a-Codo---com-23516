@@ -7,9 +7,11 @@
 
 #consolas span
 {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end;        
     text-align: center;
     flex-basis: 100%;
     border-style: solid;
@@ -22,7 +24,7 @@
 }
 
 #consolas span:hover
-{
+{    
     color: beige;
     height: 80px;
     background-size:contain;
