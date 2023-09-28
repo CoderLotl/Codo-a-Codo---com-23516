@@ -5,7 +5,28 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    background-image: linear-gradient(
+          150deg,
+          #00b7e4,
+          #505488,
+          #2f3f80,
+          #161569,
+          #5a4894,
+          #a950a1,
+          #ff7cae
+        );
+        background-size: 500%;
+      
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        animation: fanimado 10s infinite;
+      }
+
 
 #container
 {        
@@ -135,3 +156,14 @@ footer
         width: 100%;
     }
 }
+@keyframes fanimado {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

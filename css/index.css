@@ -4,6 +4,30 @@
     justify-content: space-evenly;
     background-color: antiquewhite;
 }
+#juegos1 {
+    align-items:flex-start;
+    display: flex;
+    width: 90%;
+    overflow:hidden;    
+    
+  }
+  #juegos1 img {
+    width: 15%;
+    height:max-content;
+    flex-grow: 1;
+    object-fit:cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    transform-origin: center;
+    transform: translateX(-5px);
+  }
+  #juegos1 img:hover {
+    cursor: crosshair;
+  
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);
+  }
 
 #consolas span
 {
