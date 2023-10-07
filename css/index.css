@@ -4,6 +4,61 @@
     justify-content: space-evenly;
     background-color: antiquewhite;
 }
+.box {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sometxt {
+    color: #fff;
+}
+
+.mydiv {
+    position: relative;
+    width: 70%;
+    padding: 20px; /* Añade espacio interno */
+    background-color: #323232; /* Cambia el color de fondo al color del borde */
+    z-index: 1;
+}
+
+.animate-bg:before,
+.animate-bg:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #a9fb00, #8d01a0, #031ba5, #ff004c, #e6036d, #fb0094, #ff6600, #04c2e4, #adad02, #00c3ff);
+    background-size: 150% 150%; /* Ajusta el tamaño del gradiente */
+    z-index: -1;
+    animation: BGgradient 15s ease infinite;
+}
+
+@keyframes BGgradient {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.animate-bg:after {
+    filter: brightness(1.4) drop-shadow(16px 16px 20px rgb(248, 220, 97)) blur(15px);
+}
+
+
+
 #juegos1 {
     align-items:flex-start;
     display: flex;
@@ -60,11 +115,22 @@
     
 }
 
-#consola1-span:hover
-{
-    
+#consola1-span:hover{
     background-image: url('../images/ps-icon.jpg');
 }
+
+#consola1-span:hover a{
+    visibility: hidden;
+}
+
+#consola2-span:hover a{
+    visibility: hidden;
+}
+
+#consola3-span:hover a{
+    visibility: hidden;
+}
+
 #consola2-span:hover{
     background-image: url('../images/xbox-icon.jpg');
 
