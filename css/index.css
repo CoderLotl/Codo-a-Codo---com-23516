@@ -1,177 +1,205 @@
-#consolas
-{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: antiquewhite;
-}
-.box {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-.sometxt {
-    color: #fff;
-}
+/* Ofertas Semanales */
 
 .mydiv {
-    position: relative;
-    width: 70%;
-    padding: 20px; /* Añade espacio interno */
-    background-color: #323232; /* Cambia el color de fondo al color del borde */
-    z-index: 1;
+  position: relative;
+  /* width: 70%; */
+  padding: 20px; /* Añade espacio interno */
+  background-color: #323232; /* Cambia el color de fondo al color del borde */
+  z-index: 1;
 }
 
 .animate-bg:before,
 .animate-bg:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(120deg, #a9fb00, #8d01a0, #031ba5, #ff004c, #e6036d, #fb0094, #ff6600, #04c2e4, #adad02, #00c3ff);
-    background-size: 150% 150%; /* Ajusta el tamaño del gradiente */
-    z-index: -1;
-    animation: BGgradient 15s ease infinite;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    120deg,
+    #a9fb00,
+    #8d01a0,
+    #031ba5,
+    #ff004c,
+    #e6036d,
+    #fb0094,
+    #ff6600,
+    #04c2e4,
+    #adad02,
+    #00c3ff
+  );
+  background-size: 150% 150%; /* Ajusta el tamaño del gradiente */
+  z-index: -1;
+  animation: BGgradient 15s ease infinite;
 }
 
 @keyframes BGgradient {
-    0% {
-        background-position: 100% 0%;
-    }
-    50% {
-        background-position: 0% 100%;
-    }
-    100% {
-        background-position: 100% 0%;
-    }
+  0% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
 }
 
 .animate-bg:after {
-    filter: brightness(1.4) drop-shadow(16px 16px 20px rgb(248, 220, 97)) blur(15px);
+  filter: brightness(1.4) drop-shadow(16px 16px 20px rgb(248, 220, 97))
+    blur(15px);
 }
 
+h1 {
+  width: 1023px;
+  font-size: x-large;
+  background-color: rgb(80, 8, 39);
+  margin-left: 0;
+}
 
+.sometxt {
+  color: #fff;
+}
+
+/* Juegos */
+
+#games {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 #juegos1 {
-    align-items:flex-start;
-    display: flex;
-    width: 90%;
-    overflow:hidden;    
-    
-  }
-  #juegos1 img {
-    width: 15%;
-    height:max-content;
-    flex-grow: 1;
-    object-fit:cover;
-    opacity: 0.8;
-    transition: 0.5s ease;
-    transform-origin: center;
-    transform: translateX(-5px);
-  }
-  #juegos1 img:hover {
-    cursor: crosshair;
-  
-    width: 30%;
-    opacity: 1;
-    filter: contrast(120%);
-  }
-
-#consolas span
-{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;        
-    text-align: center;
-    flex-basis: 100%;
-    border-style: solid;
-    border-width: 1px;
-    transition: 400ms;
-    -webkit-transition: 400ms;
-    -moz-transition: 400ms;
-    -ms-transition: 400ms;
-    -o-transition: 400ms;
-   
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  /* width: 90%; */
+  overflow: hidden;
+  padding: 0.5rem;
 }
 
-#consolas span:hover
-{    
-    color: beige;
-    height: 80px;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    transition: 1s;
-    
+#juegos1 img {
+  width: 180px;
+  /* height: 160px; */
+  /* margin-right: 10px; */
+  width: 15%;
+  /* height:max-content; */
+  /* height: 15%; */
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+  transform-origin: center;
+  transform: translateX(-5px);
 }
 
-#consola1-span:hover{
-    background-image: url('../images/ps-icon.jpg');
+#juegos1 img:hover {
+  cursor: crosshair;
+
+  width: 30%;
+  height: 30%;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
-#consola1-span:hover a{
-    visibility: hidden;
+/* Consolas */
+
+#consolas {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
 }
 
-#consola2-span:hover a{
-    visibility: hidden;
+#consolas span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  flex-basis: 100%;
+  border-style: solid;
+  border-width: 1px;
+  transition: 400ms;
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
 }
 
-#consola3-span:hover a{
-    visibility: hidden;
+#consolas span:hover {
+  color: beige;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  transition: 1s;
 }
 
-#consola2-span:hover{
-    background-image: url('../images/xbox-icon.jpg');
-
-}
-#consola3-span:hover{
-    background-image: url('../images/ns-icon.jpg');
-}
-#games
-{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+#consola1-span:hover {
+  background-image: url("../images/ps-icon.jpg");
 }
 
-.game-article
-{
-    text-align: center;
-    background-color: rgb(13, 124, 91);
-    margin: 20px;
-    width: 100px;
-    height: 70px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    transition: 250ms;
-    -webkit-transition: 250ms;
-    -moz-transition: 250ms;
-    -ms-transition: 250ms;
-    -o-transition: 250ms;
+#consola1-span:hover a {
+  visibility: hidden;
 }
 
-.game-article:hover
-{
-    background-color: rgb(68, 175, 143);
-    transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-    width: 150px;
-    height: 120px;
+#consola2-span:hover a {
+  visibility: hidden;
 }
+
+#consola3-span:hover a {
+  visibility: hidden;
+}
+
+#consola2-span:hover {
+  background-image: url("../images/xbox-icon.jpg");
+}
+
+#consola3-span:hover {
+  background-image: url("../images/ns-icon.jpg");
+}
+
+/* .game-article {
+  text-align: center;
+  background-color: rgb(13, 124, 91);
+  margin: 20px;
+  width: 100px;
+  height: 70px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 250ms;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+  -ms-transition: 250ms;
+  -o-transition: 250ms;
+}
+
+.game-article:hover {
+  background-color: rgb(68, 175, 143);
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  width: 150px;
+  height: 120px;
+} */
+
+/* .box {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
