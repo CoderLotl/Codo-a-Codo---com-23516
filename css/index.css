@@ -31,7 +31,7 @@
   margin: 0 auto; /* Margen automático en los lados para centrar .Ofertas en .mydiv */
 }
 
-Con este cambio, el fondo negro de .Ofertas se ampliará aún más debido al aumento en el espacio interno (padding). Puedes ajustar el valor de padding según tus preferencias para obtener el aspecto exacto que deseas.
+/*Con este cambio, el fondo negro de .Ofertas se ampliará aún más debido al aumento en el espacio interno (padding). Puedes ajustar el valor de padding según tus preferencias para obtener el aspecto exacto que deseas.*/
 
 
 
