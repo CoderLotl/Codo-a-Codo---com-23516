@@ -1,27 +1,69 @@
 
 /* Ofertas Semanales */
 
+/* Estilos para el contenedor principal */
 .mydiv {
-  position: relative;
-  /* width: 70%; */
-  padding: 20px; /* Añade espacio interno */
-  background-color: #323232; /* Cambia el color de fondo al color del borde */
-  z-index: 1;
+    position: relative;
+    margin: 2% auto; /* Ajustamos los márgenes superiores e inferiores para mayor responsividad */
+    margin-left: 0.5%; /* Ajustamos el margen izquierdo */
+    margin-right: 0.5%; /* Ajustamos el margen derecho */
+    width: 39%; /* Reducimos el ancho para dar espacio en los márgenes */
+    padding: 2%; /* Utilizamos unidades de medida relativas para el espacio interno */
+    background-color: transparent;
+    
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+/* Estilos para .Ofertas */
+/* Estilos para .Ofertas */
+.Ofertas {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10% 1px ; /* Utilizamos un porcentaje para el espacio interno para mayor flexibilidad */
+  
+  border-radius: 5px;
+  max-width: 95%; /* Ajustamos el ancho máximo para que sea responsive */
+  margin: 0 auto; /* Margen automático en los lados para centrar .Ofertas en .mydiv */
 }
 
-.animate-bg:before,
-.animate-bg:after {
+Con este cambio, el fondo negro de .Ofertas se ampliará aún más debido al aumento en el espacio interno (padding). Puedes ajustar el valor de padding según tus preferencias para obtener el aspecto exacto que deseas.
+
+
+
+
+
+
+  /* Estilos para el borde dinámico */
+  .animate-bg {
+    position: relative;
+    display:inline-block;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Estilos para el fondo dinámico */
+  .animate-bg::before,
+.animate-bg::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  border-radius: 15% 15% 15% 15%;
   background: linear-gradient(
     120deg,
     #a9fb00,
     #8d01a0,
-    #031ba5,
+    #2942ce,
     #ff004c,
     #e6036d,
     #fb0094,
@@ -30,38 +72,46 @@
     #adad02,
     #00c3ff
   );
-  background-size: 150% 150%; /* Ajusta el tamaño del gradiente */
+  background-size: 150% 150%; /* Puedes ajustar estos valores según tus preferencias */
   z-index: -1;
-  animation: BGgradient 15s ease infinite;
+  animation: BGgradient 10s ease infinite;
 }
 
-@keyframes BGgradient {
-  0% {
-    background-position: 100% 0%;
+  
+  /* Animación del fondo */
+  @keyframes BGgradient {
+    0% {
+      background-position: 10% 0%;
+    }
+    50% {
+      background-position: 10% 100%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
   }
-  50% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
-.animate-bg:after {
-  filter: brightness(1.4) drop-shadow(16px 16px 20px rgb(248, 220, 97))
-    blur(15px);
-}
-
-h1 {
-  width: 1023px;
-  font-size: x-large;
-  background-color: rgb(80, 8, 39);
-  margin-left: 0;
-}
-
-.sometxt {
+  
+  /* Estilos para el texto con fondo negro 
+  .Ofertas {
+  background-color: #000;
   color: #fff;
-}
+  padding: 5px; /* Reduce el espacio interno para hacer el borde más fino */
+  /*border-radius: 5px; /* Reduce el radio del borde para hacerlo más fino */
+  /*display: inline;*/
+/*}
+*/
+
+  
+  /* Resto de tus estilos CSS sin cambios */
+  h1 {
+    width: 1023px;
+    font-size: x-large;
+    background-color: rgb(80, 8, 39);
+    margin-left: 0;
+  }
+  
+  /* ... Otros estilos ... */
+  
 
 /* Juegos */
 
@@ -89,7 +139,7 @@ h1 {
   /* height:max-content; */
   /* height: 15%; */
   flex-grow: 1;
-  object-fit: cover;
+  object-fit:fill;
   opacity: 0.8;
   transition: 0.5s ease;
   transform-origin: center;
@@ -99,10 +149,10 @@ h1 {
 #juegos1 img:hover {
   cursor: crosshair;
 
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 15%;
   opacity: 1;
-  filter: contrast(120%);
+  filter: contrast(100%);
 }
 
 /* Consolas */
@@ -163,6 +213,7 @@ h1 {
 #consola3-span:hover {
   background-image: url("../images/ns-icon.jpg");
 }
+
 
 /* .game-article {
   text-align: center;
