@@ -1,3 +1,29 @@
+.neon-border {
+  font-size: 2rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: white;  
+  padding: 5%;
+  margin: 5%;
+  
+  border: 5px solid transparent; /* Aumentamos el grosor del borde */
+  background-image: linear-gradient(90deg,black,purple);
+  background-clip: padding-box; /* Cambiamos a padding-box para el fondo */
+  -webkit-background-clip: padding-box;
+  animation: neon 2s infinite alternate;
+}
+
+@keyframes neon {
+  0% {
+      box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px blue;
+  }
+  100% {
+      box-shadow: 0 0 5px yellow, 0 0 10px rgb(97, 247, 38), 0 0 15px white;
+  }
+}
+
+
+
 #games {
   margin-top: 20px;
   margin-left: 20px;
@@ -32,8 +58,8 @@
 #juegos1 img:hover {
   cursor: crosshair;
 
-  width: 30%;
-  height: 20%;
+  width: 20%;
+  height: 15%;
   opacity: 1;
   filter: contrast(100%);
 }
