@@ -1,120 +1,3 @@
-
-/* Ofertas Semanales */
-
-/* Estilos para el contenedor principal */
-.mydiv {
-    position: relative;
-    margin: 2% auto; /* Ajustamos los márgenes superiores e inferiores para mayor responsividad */
-    margin-left: 0.5%; /* Ajustamos el margen izquierdo */
-    margin-right: 0.5%; /* Ajustamos el margen derecho */
-    width: 39%; /* Reducimos el ancho para dar espacio en los márgenes */
-    padding: 2%; /* Utilizamos unidades de medida relativas para el espacio interno */
-    background-color: transparent;
-    
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-
-/* Estilos para .Ofertas */
-/* Estilos para .Ofertas */
-.Ofertas {
-  text-align: center;
-  background-color: #000;
-  color: #fff;
-  padding: 10% 1px ; /* Utilizamos un porcentaje para el espacio interno para mayor flexibilidad */
-  
-  border-radius: 5px;
-  max-width: 95%; /* Ajustamos el ancho máximo para que sea responsive */
-  margin: 0 auto; /* Margen automático en los lados para centrar .Ofertas en .mydiv */
-}
-
-/*Con este cambio, el fondo negro de .Ofertas se ampliará aún más debido al aumento en el espacio interno (padding). Puedes ajustar el valor de padding según tus preferencias para obtener el aspecto exacto que deseas.*/
-
-
-
-
-
-
-  /* Estilos para el borde dinámico */
-  .animate-bg {
-    position: relative;
-    display:inline-block;
-    color: white;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  /* Estilos para el fondo dinámico */
-  .animate-bg::before,
-.animate-bg::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 15% 15% 15% 15%;
-  background: linear-gradient(
-    120deg,
-    #a9fb00,
-    #8d01a0,
-    #2942ce,
-    #ff004c,
-    #e6036d,
-    #fb0094,
-    #ff6600,
-    #04c2e4,
-    #adad02,
-    #00c3ff
-  );
-  background-size: 150% 150%; /* Puedes ajustar estos valores según tus preferencias */
-  z-index: -1;
-  animation: BGgradient 10s ease infinite;
-}
-
-  
-  /* Animación del fondo */
-  @keyframes BGgradient {
-    0% {
-      background-position: 10% 0%;
-    }
-    50% {
-      background-position: 10% 100%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  }
-  
-  /* Estilos para el texto con fondo negro 
-  .Ofertas {
-  background-color: #000;
-  color: #fff;
-  padding: 5px; /* Reduce el espacio interno para hacer el borde más fino */
-  /*border-radius: 5px; /* Reduce el radio del borde para hacerlo más fino */
-  /*display: inline;*/
-/*}
-*/
-
-  
-  /* Resto de tus estilos CSS sin cambios */
-  h1 {
-    width: 1023px;
-    font-size: x-large;
-    background-color: rgb(80, 8, 39);
-    margin-left: 0;
-  }
-  
-  /* ... Otros estilos ... */
-  
-
-/* Juegos */
-
 #games {
   margin-top: 20px;
   margin-left: 20px;
@@ -149,8 +32,8 @@
 #juegos1 img:hover {
   cursor: crosshair;
 
-  width: 20%;
-  height: 15%;
+  width: 30%;
+  height: 20%;
   opacity: 1;
   filter: contrast(100%);
 }
@@ -160,7 +43,7 @@
 #consolas {
   display: flex;
   justify-content: space-evenly;
-  background-color: antiquewhite;
+  background-color: transparent;
 }
 
 #consolas span {
