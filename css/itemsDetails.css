@@ -1,12 +1,17 @@
 #item
 {
     border-style: unset;
+    border-radius: 10px;
     height: 500px;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;    
+    justify-content: flex-end;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 #gamePicture
@@ -18,7 +23,12 @@
 {
     height: 700px;
     border-style: unset;
+    border-radius: 10px;
     background-color: #e2e2e2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 #brief
