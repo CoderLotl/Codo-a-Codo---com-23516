@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet", href="../css/contacto.css">
     <script src="../js/scripts/validacionContacto.js"></script>
 </head>
 <body>
     <header class="container">
         <nav class="main-nav">
             <a href="/index.html">
-                <img class="logo" src="../images/logo.svg" alt="logo de la marca">
+                <img id="logo" src="../images/logo.svg" alt="logo de la marca">
             </a>
           <ul>
             <li><a href="../index.html">Home</a></li>
@@ -23,9 +23,9 @@
         </nav>
     </header>
     <main>
-        <h2>Contacto</h2>
-        <p>Enviame tus sugerencias a mi correo</p>
-        <section>
+        <div id="formSection">
+            <h2>Contacto</h2>
+            <p>Enviame tus sugerencias a mi correo</p>
             <form id="formContacto">
                 <input type="text" name="nombre" id="name" placeholder="nombre">
                 <br>
@@ -37,14 +37,12 @@
             </form>
             <p id="errorMessage">
             </p>
-        </section>
+        </div>
     </main>
     <footer>
         <div>
             <h2>Nuestras Redes  </h2>
-            <p>
-                Derechos reservados
-            </p>
+            <p>Derechos reservados</p>
           </div>
     </footer> 
 
