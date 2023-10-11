@@ -1,0 +1,33 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#formSection
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 50%;
+    margin-top: 80px;
+    border-radius: 120px;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    -ms-border-radius: 120px;
+    -o-border-radius: 120px;
+}
+
+#errorMessage
+{
+    visibility: hidden;
+    background-color: rgb(226, 78, 78);
+    width: 70%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}

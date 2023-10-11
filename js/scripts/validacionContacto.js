@@ -11,7 +11,14 @@ document.addEventListener('DOMContentLoaded', ()=>
         nombre = document.getElementById('name').value;
         email = document.getElementById('email').value;
         mensaje = document.getElementById('message').value;
-        ValidateFields();        
+        if(!ValidateFields())
+        {
+            errorMessageField.style.visibility = 'unset';
+        }
+        else
+        {
+            errorMessageField.style.visibility = 'hidden';
+        }
         e.preventDefault();
     });
 });
@@ -39,11 +46,21 @@ function ValidateFields()
     errors.push(ValidateMessage());
 
     errorMessageField.innerHTML = '';
+    let errorList = document.createElement('ul');
+    errorMessageField.appendChild(errorList);
 
     if(errors[0] === false)
     {
-        errorMessageField.innerHTML += `<li>Error: debe ingresar un nombre valido.</li>`;        
-    }    
+        errorList.appendChild(document.createElement('li')).textContent = 'Error: debe ingresar un nombre válido.';
+    }
+    if(errors[1] === false)
+    {
+        errorList.appendChild(document.createElement('li')).textContent = 'Error: debe ingresar un mail válido.';
+    }
+    if(errors[2] === false)
+    {
+        errorList.appendChild(document.createElement('li')).textContent = 'Error: debe ingresar algún mensaje.';
+    }
 
     return errors.every(error => error);
 }
