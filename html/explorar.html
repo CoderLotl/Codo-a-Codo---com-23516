@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/itemsBase.css">    
+    <link rel="stylesheet" href="../css/itemsSearch.css">
+    <script type="module" src="../JS/scripts/itemsSearch.js"></script>
+</head>
+<body>
+    <div id="header">
+        <!-- SOME CONTENT HERE -->
+        <div id="searchInputContainer">
+            <input id="searchInput" type="text" placeholder="Buscar...">
+            <button id="searchButton"></button>
+        </div>
+    </div>
+    <div id="container">
+        <div id="frame">            
+            <div id="displayContainer">
+                <div id="filter">
+                    <div class="filterPanel">
+                        <h1>Consola</h1>
+                        <p>
+                            <input type="checkbox" id="pc" value="pc">
+                            <label>PC</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="ps5" value="ps5">
+                            <label>Playstation 5</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="xbox" value="xbox">
+                            <label>XBOX</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="switch" value="switch">
+                            <label>Switch</label>
+                        </p>
+                    </div>
+                    <div class="filterPanel">
+                        <h2>Genero</h2>
+                        <p>
+                            <input type="checkbox" id="rpg"><label>RPG</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="mmorpg"><label>MMORPG</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="sim"><label>Simulación</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="racing"><label>Carreras</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="platforms"><label>Plataformas</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="stealth"><label>Stealth</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="sports"><label>Deportes</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="action"><label>Acción</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="strategy"><label>Estrategia</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="sandbox"><label>Sandbox</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="shooter"><label>Shooter</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="horror"><label>Horror</label>
+                        </p>                    
+                    </div>
+                    <div class="filterPanel">
+                        <div id="filterPrice">                            
+                            <p>
+                                Precio<span id="priceTag"></span><img id="dollarInfo" src="../images/question.png" title="">
+                            </p>
+                            <div id="priceSetting">
+                                <span id="priceMin">
+                                    $ <input id="priceMinInput" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Min">
+                                </span>
+                                <span id="priceMax">
+                                    $ <input id="priceMaxInput" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Max">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="applyFilter">Apply Filter</button>
+                </div>
+                <div id="itemsDisplay">
+    
+                </div>
+            </div>
+        </div>
+    </div>              
+</body>
+</html>
