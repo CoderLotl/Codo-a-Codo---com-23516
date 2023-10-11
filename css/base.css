@@ -61,9 +61,9 @@ header {
   padding: 1em;
 }
 
-.logo {
+#logo {
   margin-top: 10px;
-  width: 40%;
+  width: 60px;
 }
 
 .main-nav ul {  
