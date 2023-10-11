@@ -1,0 +1,146 @@
+#displayContainer
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#filter
+{
+    width: 300px;
+    min-height: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-style: unset;
+    background-color: rgb(182, 182, 182);
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#frame
+{
+    border: unset;
+}
+
+.filterPanel
+{
+    padding-left: 10px;
+    border-color: rgb(94, 94, 94);
+    box-sizing: border-box;
+    border-radius: 5px;    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#filterPrice
+{
+    border-style: unset;
+    margin-bottom: 50px;    
+}
+
+#priceSetting
+{
+    display: flex;
+    justify-content: space-between;    
+    border-style: unset;
+    padding-right: 20px;
+}
+
+#priceMaxInput
+{
+    width: 50px;
+}
+
+#priceMinInput
+{
+    width: 50px;
+}
+
+#itemsDisplay
+{
+    width: 800px;
+    height: 1000px;
+    border-style: unset;
+    background-color: ededed;    
+}
+
+#itemsDisplay div
+{
+    border: unset;  
+}
+
+#applyFilter
+{
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-width: 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 250ms;
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -ms-transition: 250ms;
+    -o-transition: 250ms;
+    background-color: rgb(0, 83, 179);
+}
+
+#searchInput
+{
+    border: unset,
+}
+
+
+.gameWrapper
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    margin: 3px 3px 3px 3px;
+}
+
+.itemImg
+{
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.itemBrief
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.titleContent
+{
+    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+    font-weight: unset;
+    font-size: 26px;
+    color: #333333;
+}
+
+.itemPrice
+{
+    color: #767676;
+    font-size: 20px;
+    font-weight: unset;
+}

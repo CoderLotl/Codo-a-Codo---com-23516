@@ -1,41 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <script src="./js/index.js" defer></script>
-</head>
-<body>
-    <div id="container">
-        <header>
-            <img id="logo">
-            <nav id="main-nav">
-                <a href="./index.html" id="inicio">Inicio</a>
-                <a href="./Contacto.html" id="contacto">Contacto</a>
-                <a href="./Acerca-de.html" id="acerca-de">Acerca de nosotros</a>
-            </nav>
-        </header>
-        <div id="content">            
-            <nav id="consolas">
-                <span id="consola1-span">
-                    <a>Playstation</a>
-                </span>
-                <span id="consola2-span">
-                    <a >XBox</a>
-                </span>
-                <span id="consola3-span">
-                    <a>Nintendo Switch</a>
-                </span>
-            </nav>
-            <div id="games">
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/scripts/index.js"></script>
+  </head>
 
-            </div>
-        </div>
-        <footer>
-            <h4>Todos los derechos reservados.</h4>
-        </footer>
-</body>
+  <body>
+    <header class="container">
+      <nav class="main-nav">
+          <a href="/index.html">
+              <img class="logo" src="/images/logo.svg" alt="logo de la marca">
+          </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./html/explorar.html">Explorar</a></li>
+          <li><a href="./html/acerca.html">Acerca de</a></li>
+          <li><a href="./html/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <h1 class="neon-border">Ofertas de la semana</h1>
+    
+    <main class="container" id="content">        
+      </div>
+      <div id="games">
+        <section id="juegos1">
+          <img
+            id="DemonsSouls"
+            class="imgame"
+            src="./Data/consoles/PS5/DemonsSouls/DemonsSouls1Principal.jpg"            
+            alt="Imagen de un juego"
+            name="Demon's Souls"
+            data-sku="P5-00001"
+          />
+          <img
+            id="ResidentEvilVillage"
+            class="imgame"
+            src="./Data/consoles/PS5/ResidentEvilVillage/ResidentEvilVillage1Principal.jpg"            
+            alt="Imagen de un juego"
+            name="Resident Evil Village"
+            data-sku="P5-00004"
+          />
+          <img
+            id="HaloInfinite"
+            class="imgame"
+            src="./Data/consoles/XBOX/HaloInfinite/HaloInfinite1Principal.jpg"
+            alt="Imagen de un juego"
+            name="Halo Infinite"
+            data-sku="XX-00001"
+          />
+          <img
+            id="AnimalCrossing-NewHorizons"
+            class="imgame"
+            src="./Data/consoles/SWITCH/AnimalCrossing-NewHorizons/AnimalCrossing-NewHorizons1Principal.jpg"
+            alt="Imagen de un juego"
+            name="Animal Crossing: New Horizons"
+            data-sku="SW-00002"
+          />
+          <img
+            id="WorldofWarcraft-WarlordsofDraenor"
+            class="imgame"
+            src="./Data/consoles/PC/WorldofWarcraft-WarlordsofDraenor/WorldofWarcraft-WarlordsofDraenor1Principal.jpg"
+            alt="Imagen de un juego"
+            name="World of Warcraft: Warlords of Draenor"
+            data-sku="PC-00009"
+          />
+          <img
+            id="Minecraft"
+            class="imgame"
+            src="./Data/consoles/PC/Minecraft/Minecraft1Principal.jpg"
+            alt="Imagen de un juego"
+            name="Minecraft"
+            data-sku="PC-00002"
+          />
+        </section>
+
+        <div class="background"></div>
+      </div>
+      <br />
+      <br />
+      <nav id="consolas">
+        <span id="consola1-span">
+          <a>Playstation</a>
+        </span>
+        <span id="consola2-span">
+          <a>XBox</a>
+        </span>
+        <span id="consola3-span">
+          <a>Nintendo Switch</a>
+        </span>
+      </nav>
+    </main>
+
+    <footer>
+      <div>
+        
+        <p>Nuestras Redes</p>
+        <p>Derechos reservados</p>
+      </div>
+    </footer>
+    
+  </body>
 </html>
