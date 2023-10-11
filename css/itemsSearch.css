@@ -2,7 +2,7 @@
 {
     display: flex;
     flex-direction: row;
-    border-radius: 5px;
+    border-radius: 5px;    
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -70,8 +70,7 @@
 
 #itemsDisplay
 {
-    width: 800px;
-    height: 1000px;
+    width: 100%;    
     border-style: unset;
     background-color: ededed;    
 }
@@ -111,7 +110,7 @@
 .gameWrapper
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     background-color: #ffffff;
     margin: 3px 3px 3px 3px;
 }

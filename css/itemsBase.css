@@ -49,6 +49,15 @@ div
     padding: 1em;
 }
 
+#nav-panel
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 90%;
+    border: unset;
+}
+
 #logo
 {
     width: 60px;
@@ -80,7 +89,7 @@ div
     margin-top: 80px;
     min-height: 1200px;
     background-color: beige;
-    width: 1050px;
+    width: 80%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
