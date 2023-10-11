@@ -94,7 +94,7 @@
   transition: 1s;
 }
 
-#consola1-span:hover a {
+#consola1-span:hover p {
   visibility: hidden;
 }
 

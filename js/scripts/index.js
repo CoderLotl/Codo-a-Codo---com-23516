@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () =>
 {
     AssignSearch();
+    AssignConsolesRedirection();
 });
 
 function AssignSearch()
@@ -22,4 +23,12 @@ function AssignSearch()
             window.location.href = `./html/detalles.html?data=${uriComponent}`;
         });
     }
+}
+
+function AssignConsolesRedirection()
+{
+    document.getElementById('consola1-span').addEventListener('click', ()=>
+    {
+        window.location.href = `./html/explorarConsola.html`;
+    });
 }
