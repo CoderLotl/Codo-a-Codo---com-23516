@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form id="test">
+        <input type="submit">
+    </form>
+    <script>
+        document.getElementById('test').addEventListener('submit', (e)=>
+        {
+            console.log('aaa');
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
