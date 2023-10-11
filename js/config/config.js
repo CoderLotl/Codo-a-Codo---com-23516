@@ -1,0 +1,1 @@
+export const urlTarget = '../Data/juegos2.json';
