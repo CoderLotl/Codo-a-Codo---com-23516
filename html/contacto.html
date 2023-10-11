@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/index.css">    
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/scripts/validacionContacto.js"></script>
 </head>
 <body>
     <header class="container">
@@ -15,9 +16,9 @@
             </a>
           <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="explorar.html">Explorar</a></li>
-            <li><a href="acerca.html">Acerca de</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="./explorar.html">Explorar</a></li>
+            <li><a href="./acerca.html">Acerca de</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
           </ul>
         </nav>
     </header>
@@ -25,15 +26,17 @@
         <h2>Contacto</h2>
         <p>Enviame tus sugerencias a mi correo</p>
         <section>
-            <form action="" method="post">
-                <input type="text" name="nombre" id="" placeholder="nombre">
+            <form id="formContacto">
+                <input type="text" name="nombre" id="name" placeholder="nombre">
                 <br>
-                <input type="password" name="email" id="" placeholder="email">
+                <input type="text" name="email" id="email" placeholder="email">
                 <br>
-                <textarea name="mensaje" id="" cols="50" rows="10">Deja  tu mensaje</textarea>
-                <br>
-                <input type="submit" value="Enviar">
+                <textarea name="mensaje" id="message" cols="50" rows="10" placeholder="Deja tu mensaje"></textarea>
+                <br>                
+                <input id="submitButton" type="submit" value="Enviar">
             </form>
+            <p id="errorMessage">
+            </p>
         </section>
     </main>
     <footer>
