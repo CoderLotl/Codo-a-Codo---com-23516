@@ -101,6 +101,35 @@ export class DataAccess
         }
     }
 
+    async RetrieveGamesByConsole(urlTarget, gameConsole)
+    {
+        try
+        {
+            const data = await this.FetchData(urlTarget);
+
+            if(data !== false)
+            {                
+                let filter = (item) => {
+                    return item.console === gameConsole;
+                };
+                let result = data.filter(filter);
+                if(result.length > 0)
+                {                    
+                    return result;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        catch(error)
+        {
+            console.error(error);
+            return false;
+        }
+    }
+
     /**     
      * Provides a function to filter the games based on name, price, genre, and console.
      * @param {Array} params
