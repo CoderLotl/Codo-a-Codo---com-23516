@@ -27,24 +27,24 @@ function AssignSearch()
 
 function AssignConsolesRedirection()
 {
-    let url = "./html/explorarConsola.html";
+    let url = "./html/explorarConsola.html?data=";
     document.getElementById('consola1-span').addEventListener('click', ()=>
     {
-        window.location.href = url;
+        window.location.href = url+"PS5";
     });
 
     document.getElementById('consola2-span').addEventListener('click', ()=>
     {
-        window.location.href = url;
+        window.location.href = url+"XBOX";
     });
     
     document.getElementById('consola3-span').addEventListener('click', ()=>
     {
-        window.location.href = url;
+        window.location.href = url+"SWITCH";
     });
     
     document.getElementById('consola4-span').addEventListener('click', ()=>
     {
-        window.location.href = url;
+        window.location.href = url+"PC";
     });
 }
