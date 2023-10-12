@@ -10,10 +10,29 @@
     padding-top: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 80%;
     background-color: white;
     border-style: solid;
     border-width: 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.gameWrapper
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+    border: solid;
+    border-width: 1px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    min-width: 220px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
