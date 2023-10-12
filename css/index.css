@@ -32,8 +32,7 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
-  gap: 1rem;
-  /* width: 90%; */
+  gap: 1rem;  
   overflow: hidden;
   padding: 0.5rem;
 }
@@ -51,7 +50,6 @@
 
 #juegos1 img:hover {
   cursor: crosshair;
-
   width: 20%;
   height: 15%;
   opacity: 1;

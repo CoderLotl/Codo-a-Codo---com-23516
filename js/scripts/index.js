@@ -27,8 +27,24 @@ function AssignSearch()
 
 function AssignConsolesRedirection()
 {
+    let url = "./html/explorarConsola.html";
     document.getElementById('consola1-span').addEventListener('click', ()=>
     {
-        window.location.href = `./html/explorarConsola.html`;
+        window.location.href = url;
+    });
+
+    document.getElementById('consola2-span').addEventListener('click', ()=>
+    {
+        window.location.href = url;
+    });
+    
+    document.getElementById('consola3-span').addEventListener('click', ()=>
+    {
+        window.location.href = url;
+    });
+    
+    document.getElementById('consola4-span').addEventListener('click', ()=>
+    {
+        window.location.href = url;
     });
 }
