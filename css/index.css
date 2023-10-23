@@ -12,6 +12,50 @@
   -webkit-background-clip: padding-box;
   animation: neon 2s infinite alternate;
 }
+.neon-border1 {
+  font-size: 1rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align:center;
+  color: rgb(255, 255, 255);  
+  padding: 1%;
+  margin: 1%;
+  
+  border: 5px solid transparent; /* Aumentamos el grosor del borde */
+  background-image: linear-gradient(90deg,black,purple);
+  background-clip: padding-box; /* Cambiamos a padding-box para el fondo */
+  -webkit-background-clip: padding-box;
+  animation: neon 3s infinite alternate;
+}
+.Texto{
+  margin: 5%;
+  size: 100%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.titulos
+{
+    font-size: 36px;
+    background-image: linear-gradient(45deg, black,#42e478, #d6d849, #0e0d0d);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-size: 200% 200%;
+    animation: gradientMotion 5s ease infinite;
+}
+
+@keyframes gradientMotion {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 @keyframes neon {
   0% {
