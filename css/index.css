@@ -22,8 +22,6 @@
   }
 }
 
-
-
 #games {
   margin-top: 20px;
   margin-left: 20px;
@@ -34,19 +32,14 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
-  gap: 1rem;
-  /* width: 90%; */
+  gap: 1rem;  
   overflow: hidden;
   padding: 0.5rem;
 }
 
 #juegos1 img {
-  width: 180px;
-  /* height: 160px; */
-  /* margin-right: 10px; */
-  width: 15%;
-  /* height:max-content; */
-  /* height: 15%; */
+  width: 180px;  
+  width: 15%;  
   flex-grow: 1;
   object-fit:fill;
   opacity: 0.8;
@@ -57,7 +50,6 @@
 
 #juegos1 img:hover {
   cursor: crosshair;
-
   width: 20%;
   height: 15%;
   opacity: 1;
@@ -87,6 +79,7 @@
   -moz-transition: 400ms;
   -ms-transition: 400ms;
   -o-transition: 400ms;
+  background-color: rgb(255, 55, 55);
 }
 
 #consolas span:hover {
@@ -97,13 +90,10 @@
   background-position: center;
   background-color: black;
   transition: 1s;
+  cursor: pointer;
 }
 
-#consola1-span:hover {
-  background-image: url("../images/ps-icon.jpg");
-}
-
-#consola1-span:hover a {
+#consola1-span:hover p {
   visibility: hidden;
 }
 
@@ -115,6 +105,14 @@
   visibility: hidden;
 }
 
+#consola4-span:hover a {
+  visibility: hidden;
+}
+
+#consola1-span:hover {
+  background-image: url("../images/ps-icon.jpg");
+}
+
 #consola2-span:hover {
   background-image: url("../images/xbox-icon.jpg");
 }
@@ -123,43 +121,6 @@
   background-image: url("../images/ns-icon.jpg");
 }
 
-
-/* .game-article {
-  text-align: center;
-  background-color: rgb(13, 124, 91);
-  margin: 20px;
-  width: 100px;
-  height: 70px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  transition: 250ms;
-  -webkit-transition: 250ms;
-  -moz-transition: 250ms;
-  -ms-transition: 250ms;
-  -o-transition: 250ms;
+#consola4-span:hover {
+  background-image: url("../images/masterracepc.png");
 }
-
-.game-article:hover {
-  background-color: rgb(68, 175, 143);
-  transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
-  width: 150px;
-  height: 120px;
-} */
-
-/* .box {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
