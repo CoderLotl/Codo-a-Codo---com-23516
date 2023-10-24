@@ -15,7 +15,7 @@ body {
     #ff7cae
   );
   background-size: 500%;
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
   display: flex;  
   animation: fanimado 10s infinite;
@@ -49,9 +49,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 97%;
   margin: 1em;
-  background-color: aliceblue;
+  background-color: black;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
@@ -71,7 +71,7 @@ header {
 
 #logo {
   margin-top: 10px;
-  width: 60px;
+  width: 80px;
 }
 
 .main-nav ul {  
@@ -85,6 +85,9 @@ header {
   -moz-transition: 500ms;
   -ms-transition: 500ms;
   -o-transition: 500ms;
+}
+.main-nav ul li a {
+  color: white;
 }
 
 .main-nav a:hover {
