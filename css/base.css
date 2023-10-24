@@ -37,6 +37,40 @@ img {
 }
 
 /* Definiciones Generales de Proyecto */
+
+.neon-border {
+  font-size: 2rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align:left;
+
+  color: orange;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+  border: 5px solid transparent; /* Aumentamos el grosor del borde */
+  background-image: linear-gradient(90deg,black,purple);
+  background-clip: padding-box; /* Cambiamos a padding-box para el fondo */
+  -webkit-background-clip: padding-box;
+  animation: neon 3s infinite alternate;
+}
+
+.neonText {
+  color: #ffa500;
+  text-shadow:
+    0 0 7px #ffa500,
+    0 0 10px #ffa500,
+    0 0 21px #ffa500,
+    0 0 42px #cc00ff,
+    0 0 82px #cc00ff,
+    0 0 92px #cc00ff,
+    0 0 102px #cc00ff,
+    0 0 151px #cc00ff;
+}
+
+/* Estilos para el header */
+
 header {
   background-color: transparent;
   display: flex;
@@ -55,16 +89,26 @@ header {
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
+  /* -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -o-border-radius: 10px; */
   padding: 1em;
+  /* transition-duration: 5000ms; */
+}
+
+.main-nav a {
+  transition: background 5s ease-in-out;
+}
+
+.main-nav a:hover {
+  background-image: linear-gradient(120deg, #9500ff, rgb(0, 183, 255), #24e279);
 }
 
 .main-nav li {
   width: 10%;
 }
+
 .nav-li-img {
   width: 70%;
 }
@@ -78,21 +122,19 @@ header {
   text-decoration: none;
   display: flex;  
   align-items: center;
-  justify-content: space-around;
+  justify-content: right;
   gap: 2em;
-  transition: 500ms;
-  -webkit-transition: 500ms;
+
+  /* -webkit-transition: 500ms;
   -moz-transition: 500ms;
   -ms-transition: 500ms;
-  -o-transition: 500ms;
+  -o-transition: 500ms; */
 }
+
 .main-nav ul li a {
   color: white;
 }
 
-.main-nav a:hover {
-  background-image: linear-gradient(120deg, #9500ff, rgb(0, 183, 255), #24e279);
-}
 
 /* Estilos para el footer */
 footer {
