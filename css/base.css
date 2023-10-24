@@ -48,6 +48,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
   margin: 1em;
   background-color: aliceblue;
@@ -59,6 +60,13 @@ header {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   padding: 1em;
+}
+
+.main-nav li {
+  width: 10%;
+}
+.nav-li-img {
+  width: 70%;
 }
 
 #logo {
