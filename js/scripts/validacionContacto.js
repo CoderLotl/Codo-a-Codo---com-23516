@@ -3,6 +3,7 @@ let email;
 let mensaje;
 let errorMessageField;
 
+//#region [ EVENT LISTENER ]
 document.addEventListener('DOMContentLoaded', ()=>
 {
     errorMessageField = document.getElementById('errorMessage');
@@ -22,22 +23,45 @@ document.addEventListener('DOMContentLoaded', ()=>
         e.preventDefault();
     });
 });
+//#endregion [ EVENT LISTENER ]
 
+//#region [ FUNCTIONS ]
+/**
+ * Uses a regular expresion to test the value of the variable 'nombre'.
+ * Returns true if passes, false if not.
+ * @return {bool} 
+ */
 function ValidateName()
 {
     return /^[A-Za-z]+$/.test(nombre);
 }
 
+/**
+ * Uses a regular expresion to test the value of the variable 'email', using the standard structure of an email address.
+ * Returns true if passes, false if not.
+ * @return {bool} 
+ */
 function ValidateEmail()
 {
     return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
 }
 
+/**
+ * Trims the content of the variable 'mensaje' and checks if the content is blank.
+ * Returns true if it's not blank, false if it is.
+ * @return {bool} 
+ */
 function ValidateMessage()
 {
     return mensaje.trim() === '' ? false : true;
 }
 
+/**
+ * Runs the validation on every field and collects the amount of errors. Clears any previous error message content and fills it again
+ * with the messages of the current errors.
+ * Returns true if there are no errors, and false if there's an error at any of the fields.
+ * @return {bool} 
+ */
 function ValidateFields()
 {
     let errors = [];
@@ -64,3 +88,4 @@ function ValidateFields()
 
     return errors.every(error => error);
 }
+//#endregion [ FUNCTIONS ]

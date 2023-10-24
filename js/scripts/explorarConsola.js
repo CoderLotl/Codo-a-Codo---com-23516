@@ -4,6 +4,8 @@ import { urlTarget } from "../config/config.js"; // Import of the config file.
 let dataAccess;
 let valorDolar;
 
+//#region [ EVENT LISTENER ]
+
 document.addEventListener('DOMContentLoaded', async ()=>
 {
     let gamesContainer = document.getElementById('gamesContainer');
@@ -27,6 +29,14 @@ document.addEventListener('DOMContentLoaded', async ()=>
     }
 });
 
+//#endregion [ EVENT LISTENER ]
+//#region [ FUNCTIONS ]
+
+/**
+ * Based on a received param by url, tries to search for the corresponding game.
+ * Intended for running at load. 
+ * @return {false | array} 
+ */
 async function AutoSearchByReceivedParams()
 {
     try
@@ -45,6 +55,12 @@ async function AutoSearchByReceivedParams()
     }
 }
 
+/** 
+ * Receives an array containing all the data of a game and an HTML Element intended as the container for the game.
+ * Draws an article inside with all the data of the game.
+ * @param {array} game
+ * @param {HTMLElement} displayContainer
+ */
 function DrawGameArticle(game, displayContainer)
 {
     console.log(game.name);
@@ -92,6 +108,11 @@ function DrawGameArticle(game, displayContainer)
     }
 }
 
+/** 
+ * Gets the relevant data of a game. Returns an encoded URI string.
+ * @param {array} game
+ * @return {string} 
+ */
 function GetURLParams(game)
 {
     let gameData = 
@@ -103,6 +124,11 @@ function GetURLParams(game)
     return encodeURIComponent(JSON.stringify(gameData));
 }
 
+/**
+ * Receives a short string corresponding to a game genre. Returns a more proper string for a better visualization of the game's genre.
+ * @param {string} genre
+ * @return {string} 
+ */
 function TranslateGenre(genre)
 {
     switch(genre)
@@ -129,3 +155,4 @@ function TranslateGenre(genre)
             return genre.charAt(0).toUpperCase() + genre.slice(1);
     }
 }
+//#endregion [ FUNCTIONS ]

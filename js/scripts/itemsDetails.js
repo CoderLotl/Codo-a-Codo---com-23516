@@ -10,6 +10,7 @@ let searchButton;
 let searchInput;
 let searchCriteria;
 
+//#region [ EVENT LISTENER ]
 document.addEventListener('DOMContentLoaded', async ()=>
 {
     searchInput = document.getElementById('searchInput');
@@ -44,7 +45,13 @@ document.addEventListener('DOMContentLoaded', async ()=>
         }
     });
 });
+//#endregion [ EVENT LISTENER ]
 
+//#region [ FUNCTIONS ]
+/**
+ * Single use function intended to run at load. Gets the params from the URL and returns a std object.
+ * @return {false|object} 
+ */
 function GetParamsData()
 {
     try
@@ -64,6 +71,11 @@ function GetParamsData()
     }
 }
 
+/**
+ * Retrieves the whole list of games using a lite function, passing down the var gameParams.
+ * Returns a game on success or false on failure.
+ * @return {false|array} 
+ */
 async function GetGameDetails()
 {
     let game = await dataAccess.RetrieveGamesLite(urlTarget, gameParams);
@@ -74,6 +86,10 @@ async function GetGameDetails()
     return false;
 }
 
+/**
+ * Draws the front, setting the details of the game in the respective HTML elements, effectively displaying the game
+ * and replacing the placeholder data. 
+ */
 function DrawDetails()
 {
     let gameImg = document.getElementById('gamePicture');
@@ -115,7 +131,11 @@ function DrawDetails()
     videoIframe.setAttribute('frameborder', 0);    
 }
 
+/**
+ * Sets the content of the searchInput input as the value of the variable searchCriteria. 
+ */
 function SetCriteria()
 {
     searchCriteria = searchInput.value;    
 }
+//#endregion [ FUNCTIONS ]
