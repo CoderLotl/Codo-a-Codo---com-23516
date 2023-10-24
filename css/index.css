@@ -1,69 +1,28 @@
-
-/* Ofertas Semanales */
-
-.mydiv {
-  position: relative;
-  /* width: 70%; */
-  padding: 20px; /* Añade espacio interno */
-  background-color: #323232; /* Cambia el color de fondo al color del borde */
-  z-index: 1;
+.neon-border {
+  font-size: 2rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: white;  
+  padding: 5%;
+  margin: 5%;
+  
+  border: 5px solid transparent; /* Aumentamos el grosor del borde */
+  background-image: linear-gradient(90deg,black,purple);
+  background-clip: padding-box; /* Cambiamos a padding-box para el fondo */
+  -webkit-background-clip: padding-box;
+  animation: neon 2s infinite alternate;
 }
 
-.animate-bg:before,
-.animate-bg:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    120deg,
-    #a9fb00,
-    #8d01a0,
-    #031ba5,
-    #ff004c,
-    #e6036d,
-    #fb0094,
-    #ff6600,
-    #04c2e4,
-    #adad02,
-    #00c3ff
-  );
-  background-size: 150% 150%; /* Ajusta el tamaño del gradiente */
-  z-index: -1;
-  animation: BGgradient 15s ease infinite;
-}
-
-@keyframes BGgradient {
+@keyframes neon {
   0% {
-    background-position: 100% 0%;
-  }
-  50% {
-    background-position: 0% 100%;
+      box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px blue;
   }
   100% {
-    background-position: 100% 0%;
+      box-shadow: 0 0 5px yellow, 0 0 10px rgb(97, 247, 38), 0 0 15px white;
   }
 }
 
-.animate-bg:after {
-  filter: brightness(1.4) drop-shadow(16px 16px 20px rgb(248, 220, 97))
-    blur(15px);
-}
 
-h1 {
-  width: 1023px;
-  font-size: x-large;
-  background-color: rgb(80, 8, 39);
-  margin-left: 0;
-}
-
-.sometxt {
-  color: #fff;
-}
-
-/* Juegos */
 
 #games {
   margin-top: 20px;
@@ -89,7 +48,7 @@ h1 {
   /* height:max-content; */
   /* height: 15%; */
   flex-grow: 1;
-  object-fit: cover;
+  object-fit:fill;
   opacity: 0.8;
   transition: 0.5s ease;
   transform-origin: center;
@@ -99,10 +58,10 @@ h1 {
 #juegos1 img:hover {
   cursor: crosshair;
 
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 15%;
   opacity: 1;
-  filter: contrast(120%);
+  filter: contrast(100%);
 }
 
 /* Consolas */
@@ -110,7 +69,7 @@ h1 {
 #consolas {
   display: flex;
   justify-content: space-evenly;
-  background-color: antiquewhite;
+  background-color: transparent;
 }
 
 #consolas span {
@@ -163,6 +122,7 @@ h1 {
 #consola3-span:hover {
   background-image: url("../images/ns-icon.jpg");
 }
+
 
 /* .game-article {
   text-align: center;
