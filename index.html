@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>OneUp | Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/Logo1UP.ico">
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/scripts/index.js"></script>
@@ -11,18 +13,24 @@
   <body>
     <header class="container">
       <nav class="main-nav">
-          <a href="/index.html">
-              <img id="logo" src="./images/logo.svg" alt="logo de la marca :D">
-          </a>
+        <a href="/index.html">
+          <img id="logo" src="../images/Logo1UP2.jpeg" alt="logo de la marca :D">
+        </a>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./html/explorar.html">Explorar</a></li>
-          <li><a href="./html/acerca.html">Acerca de</a></li>
-          <li><a href="./html/contacto.html">Contacto</a></li>
+          
+          <!-- Explorar--> <!-- Explorar-->
+          <li><a href="/html/explorar.html"><img class="nav-li-img" src="../images/EXPLORE.jpg" alt="Explorar"  ></a></li>
+              
+          <!--Acerca de Nosotros--> <!--PROBANDO COMMIT-->
+          <li><a href="/html/acerca.html"><img class="nav-li-img" src="../images/ACERCA DE NOSOTROS.jpg" alt="Acerca de Nosotros" ></a></li>
+
+          <!--Contacto-->  
+          <li><a href="/html/contacto.html"> <img class="nav-li-img" src="../images/CONTACTO.jpg" alt="Contacto" ></a></li>
+           
         </ul>
       </nav>
-    </header>    
-    <h1 class="neon-border">Ofertas de la semana</h1>    
+    </header>
+    <h1 class="neon-border ">Ofertas de la semana</h1>    
     <main class="container" id="content">        
       </div>
       <div id="games">
@@ -83,7 +91,7 @@
       <br />
       <nav id="consolas">
         <span id="consola1-span">
-          <p>Playstation</p>
+          <a>Playstation</a>
         </span>
         <span id="consola2-span">
           <a>XBox</a>
@@ -97,10 +105,22 @@
       </nav>
     </main>
     <footer>
-      <div>        
-        <p>Nuestras Redes</p>
-        <p>Derechos reservados</p>
+      <div>
+        <p class="neonText">Nuestras Redes</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <p class="neonText">Derechos reservados</p>
       </div>
-    </footer>    
+    </footer>
+       
   </body>
 </html>

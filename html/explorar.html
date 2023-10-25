@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorar</title>
-    <link rel="stylesheet" href="../css/itemsBase.css">    
-    <link rel="stylesheet" href="../css/itemsSearch.css">    
+    <title>OneUp | Explorar</title>
+    <link rel="icon" type="image/x-icon" href="/images/Logo1UP.ico">
+    <link rel="stylesheet" href="../css/itemsBase.css">
+    <link rel="stylesheet" href="../css/itemsSearch.css">
+    <link rel="stylesheet" href="../css/base.css">
     <script type="module" src="../JS/scripts/itemsSearch.js"></script>
 </head>
+
 <body>
-    <header id="h-container">
-        <nav id="main-nav">
+    <header class="container">
+        <nav class="main-nav">
             <a href="/index.html">
-                <img id="logo" src="../images/logo.svg" alt="logo de la marca">
+                <img id="logo" src="../images/Logo1UP2.jpeg" alt="logo de la marca :D">
             </a>
-            <div id="nav-panel">
-                <div id="searchInputContainer">
-                    <input id="searchInput" type="text" placeholder="Buscar...">
-                    <button id="searchButton"></button>
-                </div>
-                <ul id="anchors">
-                    <a href="../index.html">Home</a>
-                    <a href="./explorar.html">Explorar</a>
-                    <a href="./acerca.html">Acerca de</a>
-                    <a href="./contacto.html">Contacto</a>
-                </ul>
-            </div>
+            <ul>
+
+                <!--Home-->
+                <li><a href="/index.html"><img class="nav-li-img" src="../images/HOME.jpg" alt="Home"> </a></li>
+
+                <!--Acerca de Nosotros-->
+                <li><a href="/html/acerca.html"><img class="nav-li-img" src="../images/ACERCA DE NOSOTROS.jpg"
+                            alt="Acerca de Nosotros"></a></li>
+
+                <!--Contacto-->
+                <li><a href="/html/contacto.html"> <img class="nav-li-img" src="../images/CONTACTO.jpg"
+                            alt="Contacto"></a></li>
+            </ul>
         </nav>
-    </header>     
+    </header>
+
     <div id="container">
-        <div id="frame">            
+        <div id="searchInputContainer">
+            <input id="searchInput" type="text" placeholder="Buscar...">
+            <button id="searchButton"></button>
+        </div>
+        <div id="frame">
             <div id="displayContainer">
                 <div id="filter">
                     <div class="filterPanel">
@@ -88,19 +98,22 @@
                         </p>
                         <p>
                             <input type="checkbox" id="horror"><label>Horror</label>
-                        </p>                    
+                        </p>
                     </div>
                     <div class="filterPanel">
-                        <div id="filterPrice">                            
+                        <div id="filterPrice">
                             <p>
-                                Precio<span id="priceTag"></span><img id="dollarInfo" src="../images/question.png" title="">
+                                Precio<span id="priceTag"></span><img id="dollarInfo" src="../images/question.png"
+                                    title="">
                             </p>
                             <div id="priceSetting">
                                 <span id="priceMin">
-                                    $ <input id="priceMinInput" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Min">
+                                    $ <input id="priceMinInput" type="text"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Min">
                                 </span>
                                 <span id="priceMax">
-                                    $ <input id="priceMaxInput" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Max">
+                                    $ <input id="priceMaxInput" type="text"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Max">
                                 </span>
                             </div>
                         </div>
@@ -108,10 +121,11 @@
                     <button id="applyFilter">Apply Filter</button>
                 </div>
                 <div id="itemsDisplay">
-    
+
                 </div>
             </div>
         </div>
-    </div>              
+    </div>
 </body>
+
 </html>

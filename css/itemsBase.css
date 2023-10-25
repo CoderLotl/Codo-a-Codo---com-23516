@@ -82,12 +82,14 @@ div
     display: flex;
     justify-content: center;
     border: unset;    
+    display: flex;
+    flex-direction: column;
 }
 
 #frame
 {
-    margin-top: 80px;
-    min-height: 1200px;
+    margin-top: 20px;
+    /* min-height: 1200px; */
     background-color: beige;
     width: 80%;
     border-radius: 10px;
