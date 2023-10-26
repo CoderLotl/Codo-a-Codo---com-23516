@@ -9,6 +9,11 @@
     -o-border-radius: 5px;
 }
 
+.nav-li-img
+{
+    width: 100px;
+}
+
 #filter
 {
     width: 300px;
@@ -138,4 +143,200 @@
 #dollarInfo
 {
     width: unset;
+}
+
+@media (max-width: 320px)
+{
+    header
+    {
+        margin-bottom: unset;
+    }
+    #navList
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-li-img
+    {
+        width: 100px;
+    }
+
+    .container
+    {        
+        width: 100%;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }
+
+    .main-nav
+    {
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }
+
+    #container
+    {
+        margin-top: unset;        
+        width: 100%;        
+    }
+
+    #frame
+    {
+        width: 100vw;        
+    }
+
+    #searchButton
+    {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    #searchInputContainer
+    {
+        width: 95%;
+    }
+
+    #searchInput
+    {
+        width: 100%;
+        font-size: 18px;        
+    }
+
+    #filter
+    {
+        width: 30%;
+        min-height: 500px;
+        padding: unset;
+        border-style: unset;
+        background-color: rgb(182, 182, 182);
+        box-sizing: border-box;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }    
+
+    .filterPanel
+    {
+        padding-left: unset;
+        border-color: rgb(94, 94, 94);
+        box-sizing: border-box;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+        margin-bottom: unset;
+        font-size: 12px;
+    }
+
+    h1
+    {
+        font-size: 12px;
+    }
+    h2
+    {
+        font-size: 12px;
+    }
+
+    #filterPrice
+    {        
+        border-style: unset;
+        margin-bottom: 30px;    
+    }
+
+    #priceSetting
+    {
+        display: flex;
+        flex-direction: column;        
+        border-style: unset;
+        padding-right: 20px;
+    }
+
+    #priceMaxInput
+    {
+        width: 50px;
+    }
+
+    #priceMinInput
+    {
+        width: 50px;
+    }
+
+    #itemsDisplay
+    {
+        width: 100%;    
+        border-style: unset;
+        background-color: #ededed;
+        overflow: hidden;
+    }
+
+    #itemsDisplay div
+    {
+        border: unset;
+        width: 100%;        
+    }
+
+    #applyFilter
+    {
+        margin-top: 10px;
+        font-size: 18px;
+        padding: unset;
+        border-width: 0px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background-color: rgb(0, 83, 179);
+    }
+
+    .gameWrapper
+    {
+        display: flex;
+        flex-direction: column;    
+        background-color: #ffffff;
+        margin: 3px 3px 3px 3px;        
+    }
+
+    .itemImg
+    {
+        width: 75px;        
+    }
+
+    .itemBrief
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+    }
+
+    .titleContent
+    {
+        font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+        font-weight: unset;
+        font-size: 26px;
+        color: #333333;
+    }
+
+    .itemPrice
+    {
+        color: #767676;
+        font-size: 20px;
+        font-weight: unset;
+    }
+    #dollarInfo
+    {
+        width: unset;
+    }
+
 }
