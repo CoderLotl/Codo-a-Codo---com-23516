@@ -58,6 +58,8 @@ img {
 
 .neonText {
   color: #ffa500;
+  font-size: 18px;
+  border-color: transparent;
   text-shadow:
     0 0 7px #ffa500,
     0 0 10px #ffa500,
@@ -67,6 +69,24 @@ img {
     0 0 92px #cc00ff,
     0 0 102px #cc00ff,
     0 0 151px #cc00ff;
+}
+.social-icons a {
+  margin: 10px; /* Añade margen entre los iconos */
+  border:#000;
+  color: #fff; /* Cambia el color de los iconos a tu preferencia */
+  font-size: 24px; /* Cambia el tamaño de fuente de los iconos a tu preferencia */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+.social-icons a:hover .fab.fa-facebook {
+  color: #1877f2; /* Cambia el color de Facebook al pasar el cursor */
+}
+
+.social-icons a:hover .fab.fa-instagram {
+  color: #bc2a8d; /* Cambia el color de Instagram al pasar el cursor */
+}
+
+.social-icons a:hover .fab.fa-whatsapp {
+  color: #25d366; /* Cambia el color de WhatsApp al pasar el cursor */
 }
 
 /* Estilos para el header */
@@ -138,14 +158,13 @@ header {
 
 /* Estilos para el footer */
 footer {
-    background-color: #000; /* Color de fondo del footer */
-    color: #fff; /* Color del texto del footer */
+    background-color: #000;
     text-align: center;
-    padding: 1px 0; /* Espaciado interno del footer */
+    padding: 1px 0;
     position:relative;
-    bottom:0; /* Fijar en la parte inferior */
-    width: 100%; /* Abarcar todo el ancho */
-    z-index: 0; /* Asegurar que esté por encima de otros elementos si es necesario */
+    bottom:0; 
+    width: 100%; 
+    z-index: 0;
   }
   
 
