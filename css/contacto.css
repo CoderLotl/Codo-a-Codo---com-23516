@@ -38,6 +38,76 @@ main
     -o-border-radius: 30px;
 }
 
+@media (max-width: 600px)
+{    
+    .nav-li-img
+    {
+        width: 100px;
+    }
+
+    .container
+    {
+        width: 100%;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }
+
+    .main-nav
+    {
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }
+
+    #formTitle
+    {
+        font-size: 24px;
+    }
+
+    #formComment
+    {
+        font-size: 20px;
+    }
+
+    #message
+    {
+        width: 80%;
+    }
+
+    #formSection
+    {
+        overflow-x: hidden;
+        align-items: unset;
+        margin-top: unset;
+        margin-bottom: unset;
+        padding-left: 20px;        
+        width: 100%;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }
+
+    #errorMessage
+    {
+        visibility: hidden;
+        background-color: rgb(226, 78, 78);
+        width: 95%;
+        font-size: 14px;        
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
+
 @media (max-width: 480px)
 {
     #navList
