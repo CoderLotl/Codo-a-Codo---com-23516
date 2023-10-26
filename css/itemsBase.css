@@ -17,6 +17,11 @@ body
     background-size: 500%;    
 }
 
+.nav-li-img
+{
+    width: 100px;
+}
+
 div
 {
     border-style: solid;

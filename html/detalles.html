@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">    
     <link rel="stylesheet" href="../css/itemsBase.css" />
     <link rel="stylesheet" href="../css/itemsDetails.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,21 +12,25 @@
   </head>
   <body>
     <header id="h-container">
-        <nav id="main-nav">
+        <nav class="main-nav">
             <a href="/index.html">
-                <img id="logo" src="../images/logo.svg" alt="logo de la marca">
+                <img id="logo" src="../images/Logo1UP2.jpeg" alt="logo de la marca :D">
             </a>
             <div id="nav-panel">
                 <div id="searchInputContainer">
                     <input id="searchInput" type="text" placeholder="Buscar...">
                     <button id="searchButton"></button>
                 </div>
-                <ul id="anchors">
-                    <a href="../index.html">Home</a>
-                    <a href="./explorar.html">Explorar</a>
-                    <a href="./acerca.html">Acerca de</a>
-                    <a href="./contacto.html">Contacto</a>
-                </ul>
+                <span id="navList">
+                    <!--Home-->
+                    <a href="../index.html"><img class="nav-li-img" src="../images/HOME.jpg" alt="Home"></a>
+      
+                    <!-- Explorar--> 
+                    <a href="/html/explorar.html"><img class="nav-li-img" src="../images/EXPLORE.jpg" alt="Explorar"  ></a>
+                    
+                    <!--Acerca de Nosotros-->
+                    <a href="/html/acerca.html"><img class="nav-li-img" src="../images/ACERCA DE NOSOTROS.jpg" alt="Acerca de Nosotros"></a>
+                </span>
             </div>
         </nav>
     </header>
