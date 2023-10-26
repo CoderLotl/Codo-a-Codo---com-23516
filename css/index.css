@@ -19,8 +19,14 @@
         background-position: 0% 50%;
     }
 }
+.nav-li-img{
+  max-width: 400px;
+  max-height: 300px;
+  min-height: 80px;
+  min-width: 70px;
+  margin-right: 10%;
 
-
+}
 @keyframes neon {
   0% {
       box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px blue;
@@ -34,6 +40,9 @@
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 100%; 
+  height: auto ;
+  width: auto;
 }
 
 #juegos1 {
