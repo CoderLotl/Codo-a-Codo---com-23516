@@ -13,9 +13,7 @@
 {
     width: 300px;
     min-height: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    padding: 20px;
     border-style: unset;
     background-color: rgb(182, 182, 182);
     box-sizing: border-box;
@@ -47,7 +45,7 @@
 #filterPrice
 {
     border-style: unset;
-    margin-bottom: 50px;    
+    margin-bottom: 30px;    
 }
 
 #priceSetting
@@ -100,12 +98,6 @@
     -o-transition: 250ms;
     background-color: rgb(0, 83, 179);
 }
-
-#searchInput
-{
-    border: unset,
-}
-
 
 .gameWrapper
 {

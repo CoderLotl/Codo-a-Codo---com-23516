@@ -14,7 +14,7 @@ body
         #ff7cae
       );
     animation: fanimado 10s infinite;
-    background-size: 500%;
+    background-size: 500%;    
 }
 
 div
@@ -23,12 +23,16 @@ div
     border-width: 1px;    
 }
 
-#h-container
-{
+#container
+{    
+    padding: 100px;    
+    box-sizing: border-box;
     background-color: transparent;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    border: unset;        
 }
 
 #main-nav
@@ -73,23 +77,8 @@ div
     margin-right: 10px;
 }
 
-#container
-{
-    height: auto;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    border: unset;    
-    display: flex;
-    flex-direction: column;
-}
-
 #frame
-{
-    margin-top: 20px;
-    /* min-height: 1200px; */
+{    
     background-color: beige;
     width: 80%;
     border-radius: 10px;
@@ -103,7 +92,7 @@ div
 {    
     display: flex;
     align-items: center;
-    width: 355px;
+    width: 255px;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 2px;
@@ -149,7 +138,7 @@ div
     border-radius: 5px;
     border-style: unset;
     font-size: 22px;
-    width: 300px;
+    width: 200px;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -161,8 +150,7 @@ div
 
 #searchInput::placeholder
 {
-    font-style: italic;
-    
+    font-style: italic;    
 }
 
 @keyframes fanimado {
