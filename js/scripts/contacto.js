@@ -8,7 +8,17 @@ document.addEventListener('DOMContentLoaded', ()=>
 {
     errorMessageField = document.getElementById('errorMessage');
     document.getElementById('formContacto').addEventListener('submit', (e)=>
-    {        
+    {
+        const dialog = document.getElementById('dialog');
+        const btnBuyItem = document.getElementById('buyItem');
+        const btnClose = document.getElementById('btnClose');
+    
+        btnClose.addEventListener('click', function()
+        {
+            dialog.style.display = '';
+            dialog.close();        
+        });
+        
         nombre = document.getElementById('name').value;
         email = document.getElementById('email').value;
         mensaje = document.getElementById('message').value;
@@ -19,6 +29,8 @@ document.addEventListener('DOMContentLoaded', ()=>
         else
         {
             errorMessageField.style.visibility = 'hidden';
+            dialog.open = true;        
+            document.getElementById('dialog').style.display = 'flex';
         }
         e.preventDefault();
     });

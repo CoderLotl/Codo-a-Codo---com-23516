@@ -23,14 +23,12 @@ document.addEventListener('DOMContentLoaded', async ()=>
     btnClose.addEventListener('click', function()
     {
         dialog.style.display = '';
-        dialog.close();
-        //dialog.classList.remove('open');
+        dialog.close();        
     });
 
     btnBuyItem.addEventListener('click', function()
     {
-        dialog.open = true;
-        //dialog.classList.add('open');
+        dialog.open = true;        
         document.getElementById('dialog').style.display = 'flex';
     });
 

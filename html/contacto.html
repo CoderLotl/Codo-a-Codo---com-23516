@@ -7,7 +7,8 @@
     <link rel="icon" type="image/x-icon" href="/images/Logo1UP.ico">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet", href="../css/contacto.css">
-    <script src="../js/scripts/validacionContacto.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/scripts/contacto.js"></script>
 </head>
 <body>
     <header class="container">
@@ -28,6 +29,15 @@
       </nav>
     </header>  
       <main>
+        <dialog id="dialog">
+            <div id="dialogDiv">                
+                <p>Muchas gracias por enviarnos sus comentarios. <br> A la brevedad nos pondremos en contacto con usted :)</p>
+            </div>
+            <button id="btnClose">
+                Cerrar
+                <i class="fas fa-window-close"></i>
+            </button>
+        </dialog>  
         <div class="neon-border" id="formSection">
             <h1 id="formTitle">Contacto</h2>
             <p id="formComment">Enviame tus sugerencias a mi correo</p>
