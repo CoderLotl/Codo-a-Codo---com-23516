@@ -16,6 +16,24 @@ document.addEventListener('DOMContentLoaded', async ()=>
     searchInput = document.getElementById('searchInput');
     searchButton = document.getElementById('searchButton');
 
+    const dialog = document.getElementById('dialog');
+    const btnBuyItem = document.getElementById('buyItem');
+    const btnClose = document.getElementById('btnClose');
+
+    btnClose.addEventListener('click', function()
+    {
+        dialog.style.display = '';
+        dialog.close();
+        //dialog.classList.remove('open');
+    });
+
+    btnBuyItem.addEventListener('click', function()
+    {
+        dialog.open = true;
+        //dialog.classList.add('open');
+        document.getElementById('dialog').style.display = 'flex';
+    });
+
     valorDolar = await GetDollarValue();
     
     gameParams = GetParamsData();
@@ -138,4 +156,5 @@ function SetCriteria()
 {
     searchCriteria = searchInput.value;    
 }
+
 //#endregion [ FUNCTIONS ]
