@@ -19,16 +19,9 @@
         background-position: 0% 50%;
     }
 }
-.nav-li-img{
- max-width: 400px;
-  max-height: 300px;
 
-  min-height: 90px;
-  min-width: 80px;
-  margin-right: 5%;
-  text-align: center;
 
-}
+
 @keyframes neon {
   0% {
       box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px blue;
