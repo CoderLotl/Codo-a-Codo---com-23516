@@ -130,9 +130,6 @@ header {
   width: 100%;
 }
 
-
-
-
 #logo {
   margin-top: 10px;
   width: 150px;
@@ -153,7 +150,6 @@ header {
 
 }
 
-
 .main-nav ul li a {
   color: white;
 }
@@ -169,6 +165,11 @@ footer {
     width: 100%; 
     z-index: 0;
   }
+
+.nav-li-img
+{
+    width: 100px;
+}
   
 
 /* RESPONSIVENESS */
@@ -180,6 +181,17 @@ footer {
 
   #container {
     width: 50%;
+  }
+  
+  #navList
+  {
+      display: flex;
+      flex-direction: column;
+  } 
+
+  .nav-li-img
+  {
+      width: 75px;
   }
 }
 
