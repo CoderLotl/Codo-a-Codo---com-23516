@@ -1,33 +1,29 @@
-
-.Texto{
+.Texto {
   margin: 5%;
   size: 100%;
   font-size: 1.5rem;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 @keyframes gradientMotion {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-
 
 @keyframes neon {
   0% {
-      box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px blue;
+    box-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px blue;
   }
   100% {
-      box-shadow: 0 0 5px yellow, 0 0 10px rgb(97, 247, 38), 0 0 15px white;
+    box-shadow: 0 0 5px yellow, 0 0 10px rgb(97, 247, 38), 0 0 15px white;
   }
 }
 
@@ -44,17 +40,17 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
-  gap: 1rem;  
+  gap: 1rem;
   overflow: hidden;
   padding: 0.5rem;
 }
 
 #juegos1 img {
-  width: 180px;  
+  width: 180px;
   height: 250px;
-  width: 15%;  
+  width: 15%;
   flex-grow: 1;
-  object-fit:fill;
+  object-fit: fill;
   opacity: 0.8;
   transition: 0.5s ease;
   transform-origin: center;
@@ -97,12 +93,10 @@
   background-color: purple(255, 55, 55);
 
   border: 5px solid transparent; /* Aumentamos el grosor del borde */
-  background-image: linear-gradient(90deg,black,purple);
+  background-image: linear-gradient(90deg, black, purple);
   background-clip: padding-box; /* Cambiamos a padding-box para el fondo */
   -webkit-background-clip: padding-box;
   animation: neon 3s infinite alternate;
-
-  
 }
 
 #consolas span:hover {
