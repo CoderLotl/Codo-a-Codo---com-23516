@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
 #item
 {
     border-style: unset;
@@ -170,4 +175,56 @@
 {
     width: 672px;
     height: 378px;
+}
+
+#dialog
+{    
+    flex-direction: column;
+    align-items: center;
+    border: 0px;
+    border-radius: 40px;
+    background-color: rgb(126, 76, 172);
+    width: 60vw;
+    height: 30vh;
+    position: fixed;
+    top: 20%;
+    z-index: 999;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;    
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop
+{
+    from {top: -300px}
+    to {top: 20%}
+}
+
+#dialogDiv
+{
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2;
+    border-radius: 200px;
+    text-align: center;
+    border: 0px;
+    width: 90%;
+    height: 90%;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+
+#btnClose
+{
+    margin-top: 20px;
+    width: 80px;
+    height: 50px;
 }

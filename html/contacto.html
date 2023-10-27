@@ -7,33 +7,41 @@
     <link rel="icon" type="image/x-icon" href="/images/Logo1UP.ico">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet", href="../css/contacto.css">
-    <script src="../js/scripts/validacionContacto.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/scripts/contacto.js"></script>
 </head>
 <body>
     <header class="container">
-        <nav class="main-nav">
+      <nav class="main-nav">
           <a href="/index.html">
-            <img id="logo" src="../images/Logo1UP2.jpeg" alt="logo de la marca :D">
+              <img id="logo" src="../images/Logo1UP2.jpeg" alt="logo de la marca :D">
           </a>
-          <ul>
-            
-            <!--Home-->  
-            <li><a href="/index.html"><img class="nav-li-img" src="../images/Home-2.jpg" alt="Home">       </a></li>
+          <span id="navList">
+              <!--Home-->
+              <a href="../index.html"><img class="nav-li-img" src="../images/HOME.jpg" alt="Home"></a>
+
+              <!-- Explorar--> 
+              <a href="/html/explorar.html"><img class="nav-li-img" src="../images/EXPLORE.jpg" alt="Explorar"  ></a>
               
-            <!-- Explorar--> 
-            <li><a href="/html/explorar.html"><img class="nav-li-img" src="../images/EXPLORAR-2.jpg" alt="Explorar"  ></a></li>
-                
-            <!--Nosotros--> 
-            <li><a href="/html/acerca.html"><img class="nav-li-img" src="../images/NOSOTROS-2.jpg" alt="Acerca de Nosotros" ></a></li>
-  
-          </ul>
-        </nav>
-      </header>
-  
+              <!--Acerca de Nosotros-->
+              <a href="/html/acerca.html"><img class="nav-li-img" src="../images/ACERCA DE NOSOTROS.jpg" alt="Acerca de Nosotros"></a>
+          </span>
+      </nav>
+    </header>  
+
       <main>
+        <dialog id="dialog">
+            <div id="dialogDiv">                
+                <p>Muchas gracias por enviarnos sus comentarios. <br> A la brevedad nos pondremos en contacto con usted :)</p>
+            </div>
+            <button id="btnClose">
+                Cerrar
+                <i class="fas fa-window-close"></i>
+            </button>
+        </dialog>  
         <div class="neon-border" id="formSection">
-            <h2>Contacto</h2>
-            <p>Enviame tus sugerencias a mi correo</p>
+            <h1 id="formTitle">Contacto</h2>
+            <p id="formComment">Enviame tus sugerencias a mi correo</p>
             <form id="formContacto">
                 <input type="text" name="nombre" id="name" placeholder="nombre">
                 <br>
@@ -53,6 +61,5 @@
             <p class="neonText">Derechos reservados</p>
           </div>
     </footer> 
-
 </body>
 </html>

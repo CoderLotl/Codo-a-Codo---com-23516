@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.nav-li-img
+{
+    width: 100px;
+}
+
 #gamesContainer
 {
     margin-top: 30px;
@@ -35,7 +40,7 @@
     border-width: 1px;
     margin-left: 5px;
     margin-bottom: 5px;
-    min-width: 220px;
+    width: 220px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -55,7 +60,7 @@
 }
 
 .titleContent
-{
+{    
     font-weight: bold;
     transition: 250ms;
     -webkit-transition: 250ms;
@@ -67,4 +72,9 @@
 .titleContent:hover
 {
     color: green
+}
+
+.titleContent:link
+{
+    word-wrap: break-word;
 }
