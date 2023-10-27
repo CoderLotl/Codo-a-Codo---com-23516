@@ -41,7 +41,7 @@ img {
 .neon-border {
   font-size: 2rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align:left;
+  text-align:center;
 
   color: orange;
   padding: 0%;
@@ -96,6 +96,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .main-nav {
@@ -126,30 +127,32 @@ header {
 }
 
 .main-nav li {
-  width: 10%;
+  width: 100%;
 }
 
-.nav-li-img {
-  width: 70%;
-}
+
+
 
 #logo {
   margin-top: 10px;
-  width: 80px;
+  width: 150px;
 }
 
 .main-nav ul {  
   text-decoration: none;
   display: flex;  
   align-items: center;
-  justify-content: right;
-  gap: 2em;
+  justify-content: center;
+  gap: 2m;
+  width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+  min-height: 150px;
+  min-width: 150px;
+  position: center;
 
-  /* -webkit-transition: 500ms;
-  -moz-transition: 500ms;
-  -ms-transition: 500ms;
-  -o-transition: 500ms; */
 }
+
 
 .main-nav ul li a {
   color: white;
@@ -176,7 +179,7 @@ footer {
   }
 
   #container {
-    width: 100%;
+    width: 50%;
   }
 }
 
