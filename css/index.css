@@ -108,7 +108,7 @@
   cursor: pointer;
 }
 
-#consola1-span:hover p {
+#consola1-span:hover a {
   visibility: hidden;
 }
 
