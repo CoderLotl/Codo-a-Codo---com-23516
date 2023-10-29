@@ -10,9 +10,9 @@ main
     align-items: center;    
 }
 
-.nav-li-img
+#message
 {
-    width: 100px;
+    resize: none;
 }
 
 #formSection
@@ -43,13 +43,8 @@ main
     -o-border-radius: 30px;
 }
 
-@media (max-width: 600px)
-{    
-    .nav-li-img
-    {
-        width: 100px;
-    }
-
+@media (max-width: 1024px)
+{ 
     .container
     {
         width: 100%;
@@ -166,17 +161,12 @@ main
     height: 50px;
 }
 
-@media (max-width: 320px)
+@media (max-width: 480px)
 {
     #navList
     {
         display: flex;
         flex-direction: column;
-    }
-    
-    .nav-li-img
-    {
-        width: 100px;
     }
 
     .container

@@ -41,7 +41,7 @@ img {
 .neon-border {
   font-size: 2rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align:left;
+  text-align:center;
 
   color: orange;
   padding: 0%;
@@ -58,6 +58,8 @@ img {
 
 .neonText {
   color: #ffa500;
+  font-size: 18px;
+  border-color: transparent;
   text-shadow:
     0 0 7px #ffa500,
     0 0 10px #ffa500,
@@ -68,6 +70,24 @@ img {
     0 0 102px #cc00ff,
     0 0 151px #cc00ff;
 }
+.social-icons a {
+  margin: 10px; /* Añade margen entre los iconos */
+  border:#000;
+  color: #fff; /* Cambia el color de los iconos a tu preferencia */
+  font-size: 24px; /* Cambia el tamaño de fuente de los iconos a tu preferencia */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+.social-icons a:hover .fab.fa-facebook {
+  color: #1877f2; /* Cambia el color de Facebook al pasar el cursor */
+}
+
+.social-icons a:hover .fab.fa-instagram {
+  color: #bc2a8d; /* Cambia el color de Instagram al pasar el cursor */
+}
+
+.social-icons a:hover .fab.fa-whatsapp {
+  color: #25d366; /* Cambia el color de WhatsApp al pasar el cursor */
+}
 
 /* Estilos para el header */
 
@@ -76,6 +96,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .main-nav {
@@ -106,29 +127,27 @@ header {
 }
 
 .main-nav li {
-  width: 10%;
-}
-
-.nav-li-img {
-  width: 70%;
+  width: 100%;
 }
 
 #logo {
   margin-top: 10px;
-  width: 80px;
+  width: 150px;
 }
 
 .main-nav ul {  
   text-decoration: none;
   display: flex;  
   align-items: center;
-  justify-content: right;
-  gap: 2em;
+  justify-content: center;
+  gap: 2m;
+  width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+  min-height: 150px;
+  min-width: 150px;
+  position: center;
 
-  /* -webkit-transition: 500ms;
-  -moz-transition: 500ms;
-  -ms-transition: 500ms;
-  -o-transition: 500ms; */
 }
 
 .main-nav ul li a {
@@ -138,15 +157,19 @@ header {
 
 /* Estilos para el footer */
 footer {
-    background-color: #000; /* Color de fondo del footer */
-    color: #fff; /* Color del texto del footer */
+    background-color: #000;
     text-align: center;
-    padding: 1px 0; /* Espaciado interno del footer */
+    padding: 1px 0;
     position:relative;
-    bottom:0; /* Fijar en la parte inferior */
-    width: 100%; /* Abarcar todo el ancho */
-    z-index: 0; /* Asegurar que esté por encima de otros elementos si es necesario */
+    bottom:0; 
+    width: 100%; 
+    z-index: 0;
   }
+
+.nav-li-img
+{
+    width: 100px;
+}
   
 
 /* RESPONSIVENESS */
@@ -157,7 +180,18 @@ footer {
   }
 
   #container {
-    width: 100%;
+    width: 50%;
+  }
+  
+  #navList
+  {
+      display: flex;
+      flex-direction: column;
+  } 
+
+  .nav-li-img
+  {
+      width: 75px;
   }
 }
 

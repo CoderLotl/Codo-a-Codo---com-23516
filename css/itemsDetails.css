@@ -3,6 +3,37 @@
     src: url('../fonts/Raleway/static/Raleway-Regular.ttf');
 }
 
+.main-nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;        
+}
+
+#sub-nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#nav-panel
+{
+    justify-content: right;
+}
+
+#searchInputContainer
+{
+    width: 400px;
+}
+
+#searchInput
+{
+    width: 90%;
+}
+
 #item
 {
     border-style: unset;
@@ -227,4 +258,126 @@
     margin-top: 20px;
     width: 80px;
     height: 50px;
+}
+
+@media (max-width: 1024px)
+{
+    #searchInputContainer
+    {
+        width: 80%;
+    }
+
+    #container
+    {
+        padding: unset;
+        width: 100%;        
+    }
+    
+    #frame
+    {
+        width: 100%;
+        border: unset;
+    }
+
+    #item
+    {
+        width: 100%;
+        border: unset;
+        flex-direction: row;
+        padding-top: 100px;
+    }
+
+    #gamePicture
+    {
+        width: 250px;
+    }
+
+    #gameTitle
+    {
+        font-size: 26px;
+    }
+
+    #gamePrice
+    {
+        font-size: 24px;
+    }
+
+    #itemControlContent
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #stockData
+    {
+        height: 20px;
+    }
+
+    #details
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+}
+
+@media (max-width: 480px)
+{
+    #searchInputContainer
+    {
+        width: 80%;
+    }
+
+    #container
+    {
+        padding: unset;
+        width: 100%;        
+    }
+    
+    #frame
+    {
+        width: 100%;
+        border: unset;
+    }
+
+    #item
+    {
+        width: 100%;
+        border: unset;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    #gamePicture
+    {
+        width: 180px;
+    }
+
+    #gameTitle
+    {
+        font-size: 20px;
+    }
+
+    #gamePrice
+    {
+        font-size: 18px;
+    }
+
+    #itemControlContent
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #stockData
+    {
+        height: 20px;
+    }
+
+    #details
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
 }
