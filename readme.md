@@ -56,6 +56,7 @@ incluyendo diseño, desarrollo, contenido, etc.
     Angelo: Documentación, Base de datos
     Guido: Desarrollo, testeo.
     Carina: Documentación, maquetado y desarrollo
+    Florencia:Documentacion, Desarrollo
 
 -----------------------------------------------------------------------------------------------------------------
 
