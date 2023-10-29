@@ -57,21 +57,75 @@ incluyendo diseño, desarrollo, contenido, etc.
     Guido: Desarrollo, testeo.
     Carina: Documentación, maquetado y desarrollo
 
-
+-----------------------------------------------------------------------------------------------------------------
 
 7. Cronograma Tentativo:
 ● Una estimación de las fechas de inicio y finalización de las diferentes
 etapas del proyecto.
-8. Recursos Externos:
+
+    * 1era etapa: 29/10/2023
+        Armado del equipo
+        Documentación
+        Maquetado
+        Armado de estructura de las páginas
+	
+    * 2da etapa:
+        Refinamiento de las páginas.  Estilos.  Imagenes y cards estáticos.
+    * 3era etapa
+        Refinamiento de las páginas.  Mejora de estilos.
+        Funcionalidades locales.  Agregado de JS.
+    * 4ta etapa
+        Refinamiento de las páginas
+        Comunicación con el back
+
+-----------------------------------------------------------------------------------------------------------------
 ● Mención de cualquier recurso externo que se utilizará, como APIs,
 bibliotecas de código, recursos gráficos, etc.
-9. Desarrollos Futuros y Mejoras Potenciales (Opcional)
-● Lista de elementos, características o mejoras que consideran deseables
-para futuras iteraciones o actualizaciones del proyecto. Esto puede
-incluir funcionalidades adicionales, mejoras de diseño, expansión de
+8. Recursos Externos:
+
+    * Uso de la API de Google Maps para mostrar la ubicación en la página
+      de contacto.
+    * Integración de Formspree para la funcionalidad del formulario de
+      contacto.
+
+-----------------------------------------------------------------------------------------------------------------
+● Lista de elementos, características o mejoras que consideran deseables para futuras iteraciones o actualizaciones del proyecto. Esto puede incluir funcionalidades adicionales, mejoras de diseño, expansión de
 contenido, integración con otras tecnologías, entre otros.
-10. Contacto:
+9. Desarrollos Futuros y Mejoras Potenciales (Opcional)
+    * Registros de usuario.
+    * Login.
+    * Gateway de pagos
+
+-----------------------------------------------------------------------------------------------------------------
+
 ● Información de contacto del equipo y cómo los usuarios pueden obtener
 soporte en caso de problemas o preguntas.
+10. Contacto:
+
+    Guido Montenegro
+        Mail: guimontenegro1987@gmail.com
+        Cel: +54 9 2932 52-0271
+        Dni: 32.935.959 
+
+    Carina Adrian: 
+        Email: carina.adrian.p@gmail.com
+        Cel: +54 9 11 3338-3219
+        Dni:21.439.731
+
+    Jerónimo Delmar
+        Mail: j.e.delmar.87@gmail.com
+        Tel: +54 9 11 5945-0770
+        Dni:
+
+    Angelo chacon
+        Mail: angelochacon1990@gmail.com
+        Tel: +54 9 11 2398-0634
+        Dni: 95.992.231
+
+    Florencia Benitez
+        Mail: Flor.magalib@gmail.com
+        Tel: +54 9 11 6335-8556
+        Dni: 36.502.209
+-----------------------------------------------------------------------------------------------------------------
 11. Fecha de Entrega:
-● Fecha de entrega del proyecto establecida por el Instructor.
+    Domingo 29-10-2023.
