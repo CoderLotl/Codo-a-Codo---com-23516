@@ -102,6 +102,11 @@ contenido, integración con otras tecnologías, entre otros.
 soporte en caso de problemas o preguntas.
 10. Contacto:
 
+    Jerónimo Delmar
+        Mail: j.e.delmar.87@gmail.com
+        Tel: +54 9 11 5945-0770
+        Dni: 33.169.405
+
     Guido Montenegro
         Mail: guimontenegro1987@gmail.com
         Cel: +54 9 2932 52-0271
@@ -110,12 +115,7 @@ soporte en caso de problemas o preguntas.
     Carina Adrian: 
         Email: carina.adrian.p@gmail.com
         Cel: +54 9 11 3338-3219
-        Dni:21.439.731
-
-    Jerónimo Delmar
-        Mail: j.e.delmar.87@gmail.com
-        Tel: +54 9 11 5945-0770
-        Dni:
+        Dni: 21.439.731
 
     Angelo chacon
         Mail: angelochacon1990@gmail.com
