@@ -1,4 +1,4 @@
-1. Título y Descripción del Proyecto:
+1. Título y Descripción del Proyecto:  1UP Game Store
 ● Un título claro y descriptivo para identificar el proyecto.
 ● Una breve descripción que resume el propósito y objetivo del sitio web.
 2. Público Objetivo:
